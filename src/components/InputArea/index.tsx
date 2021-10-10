@@ -15,6 +15,13 @@ const InputArea = ({onAdd}: Props) => {
 
   let categoryKeys: string[] = Object.keys(categories);
 
+  const clearFields = () => {
+    setDateNew('');
+    setCategoryNew('');
+    setTitleNew('');
+    setValueNew(0);
+  }
+
   const handleAddEvent = () => {
     let errors: string[] = [];
 
@@ -44,7 +51,10 @@ const InputArea = ({onAdd}: Props) => {
         value: valueNew
       };
       onAdd(newItem);
+      clearFields();
     }
+
+
   };
 
   return (

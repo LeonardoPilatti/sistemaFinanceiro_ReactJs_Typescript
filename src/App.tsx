@@ -18,7 +18,6 @@ const App = () => {
 
   React.useEffect(() => {
     setFilteredList( filterListByMonth(list, currentMonth) );
-
   }, [list, currentMonth]);
 
   React.useEffect(() => {
