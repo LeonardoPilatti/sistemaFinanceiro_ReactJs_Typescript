@@ -30,4 +30,5 @@ export const MonthTitle = styled.div`
 
 export const ResumeArea = styled.div`
   flex: 2;
+  display: flex;
 `;
