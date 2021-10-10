@@ -11,7 +11,7 @@ const ResumeItem = ({title, value, color}: Props) => {
   return (
     <C.Container>
       <C.Title>{title}</C.Title>
-      <C.Info color={color} >R$ {value}</C.Info>
+      <C.Info color={color} >R$ {value.toFixed(2)}</C.Info>
     </C.Container>
   )
 }
