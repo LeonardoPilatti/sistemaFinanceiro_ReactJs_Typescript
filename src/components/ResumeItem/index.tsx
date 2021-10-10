@@ -1,11 +1,18 @@
 import React from 'react'
 import * as C from './styles';
 
-const ResumeItem = () => {
+type Props = {
+  title: string;
+  value: number;
+  color?: string;
+}
+
+const ResumeItem = ({title, value, color}: Props) => {
   return (
-    <div>
-      
-    </div>
+    <C.Container>
+      <C.Title>{title}</C.Title>
+      <C.Info color={color} >R$ {value}</C.Info>
+    </C.Container>
   )
 }
 
