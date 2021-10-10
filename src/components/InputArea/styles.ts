@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 20px;
   margin-top: 20px;
   display: flex;
-  height:100px
+  align-items: center;
 `;
 export const InputLabel = styled.label`
   flex: 1;

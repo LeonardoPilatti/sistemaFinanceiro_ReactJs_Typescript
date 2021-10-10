@@ -53,8 +53,6 @@ const InputArea = ({onAdd}: Props) => {
       onAdd(newItem);
       clearFields();
     }
-
-
   };
 
   return (
