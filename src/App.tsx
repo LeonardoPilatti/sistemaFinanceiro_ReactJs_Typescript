@@ -61,8 +61,6 @@ const App = () => {
           income={income}
           expense={expense}
         />
-        <p>{income}</p>
-        <p>{expense}</p>
 
         <InputArea onAdd={handleAddItem} />     
 
